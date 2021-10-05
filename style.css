@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* GLOBAL */
+body {
+    background-color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/* TITLE */
+.title {
+    margin: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+/* INFO */
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.info-text {
+    margin-left: 40px;
+    line-height: 1;
+    color: var(--text-color);
+}
+
+@media (max-width: 700px) {
+    .info-text {
+        margin: 15px;
+        line-height: 1;
+    }
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.ava {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* SOCIAL */
+
+div.social {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 170px;
+}
+
+@media (max-width: 700px) {
+    div.social {
+        padding: 15px;
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+div.social a {
+    color: var(--text-color);
+}
+
+div.social a:hover {
+    opacity: 70%;
+}
+
+ion-icon {
+    font-size: 20px;
+  }
+
+/* STUDY & SCHEDULE & COURSES */
+.card {
+    padding: 15px 20px;
+    background-color: #8063fa;
+    margin: 20px;
+    border-radius: 30px ;
+}
+
+.card h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: white;
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+.table-study {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.table-study td:nth-child(1) {
+    font-weight: bold;
+    color: white;
+    padding: 5px 50px 5px 0px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.table tr:nth-child(1) {
+    font-style: ;
+    font-weight: bold;
+    color: white;
+}
+
+.table tr:nth-child(1) :after {
+    content: '';
+    height: 2px;
+    width: 30px;
+    background: white;
+    display: block;
+    margin-top: 5px;
+}
+
+.card:nth-last-child(2) {
+    margin-bottom: 40px;
+}
+
+/* CONTACT */
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact > div {
+    float: left;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.contact > div a {
+    color: var(--text-color);
+}
+
+.contact > div a:hover {
+    opacity: 70%;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.1em;
+    color: #b0aeba;
+    margin: 10px;
+}
+
+
+/* BONUS FOR VLADILEN COURSE */
+
+/*Default Theme*/
+.default{
+  --text-color: #000000;
+  --background: #ffffff;
+  --neutral: rgba(229,229,229,0.3);
+}
+
+/*Dark Theme*/
+.darkmode {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 700px) {
+    .darkmode {
+        display: flex;
+        justify-content: right;
+    }
+}
+
+.dark{
+  --text-color: #ffffff;
+  --background: #000000;
+  --neutral: rgba(229,229,229,0.3);
+}
+body {
+    background: var(--background);
+}
+
+#toggle-theme{
+  padding: 5px 40px;
+  line-height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--text-color);
+  color: var(--background);
+  outline: none;
+  cursor: pointer;
+}
+
